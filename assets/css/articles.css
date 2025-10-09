@@ -1,0 +1,43 @@
+.articles-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column; /* Меняем направление на вертикальное */
+  gap: 1rem; /* Можно немного уменьшить, чтобы выглядело аккуратно */
+  background: #fafafa;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: 0.2s;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.article-card img {
+  width: 100%; /* Картинка растягивается на ширину карточки */
+  height: 180px; /* Можно подкорректировать высоту */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.article-content h2 {
+  margin-top: 1rem; /* Немного отступа от картинки */
+}
+
+.article-meta {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 0.3em;
+}
+
+.article-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0078ff;
+}
